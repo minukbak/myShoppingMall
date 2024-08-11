@@ -1,0 +1,15 @@
+#Server
+server:
+  port: 8090
+  session:
+    timeout: 360000
+  servlet:
+      init-parameters:
+        development : true
+
+#JSP ViewResolver
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
