@@ -1,4 +1,4 @@
-package com.myshoppingmall;
+package com.myshoppingmall.main;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MainController {
-    @GetMapping("/")
+    @GetMapping("/main/")
     public String home(Model model) {
         model.addAttribute("name", "MinukBak!");
         return "index";
